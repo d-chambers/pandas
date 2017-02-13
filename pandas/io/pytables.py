@@ -3316,6 +3316,8 @@ class Table(Fixed):
             data_columns = list(axis_labels)
         elif data_columns is None:
             data_columns = []
+        else:
+            data_columns = list(data_columns)
 
         # if min_itemsize is a dict, add the keys (exclude 'values')
         if isinstance(min_itemsize, dict):
